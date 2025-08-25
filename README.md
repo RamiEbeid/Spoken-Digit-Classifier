@@ -30,7 +30,7 @@ While achieving high accuracy on a clean dataset is a good start, the primary ch
 
 -   **Sample Rate Mismatch:** The 8kHz training data had to be upsampled to 48kHz to match the domain of modern browser-based microphones.
 -   **The Failure of Over-Augmentation:** Aggressive audio-level augmentations (like heavy reverb and noise) completely destroyed the signal in the clean FSDD dataset, preventing the model from learning.
--   **The Success of Gentle Augmentation:** The final, successful real-time model uses a targeted and gentle augmentation strategy—`SpecAugment`—which regularizes the model effectively without corrupting the core audio features.
+-   **The Success of Gentle Augmentation:** The final, successful real-time model uses a targeted and gentle augmentation strategy—`SpecAugment`—which regularizes the model effectively without corrupting the core audio features. First, we added a small amount of random noise to the raw audio to simulate the effect of microphone hiss. Second, after creating a spectrogram "image" from this audio, we randomly hid small horizontal bands (frequencies) and vertical bands (time steps) using a technique called SpecAugment. This process forces the model to learn the essential, holistic features of each digit instead of memorizing specific, narrow details. This combined approach makes the model much more robust to the variations and imperfections of real-world audio without destroying the core identifying information of the spoken digits
 
 ---
 
