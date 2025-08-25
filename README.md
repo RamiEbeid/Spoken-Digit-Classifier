@@ -2,7 +2,7 @@
 
 This repository contains a complete, end-to-end workflow for building and comparing two high-performance spoken digit recognition models. The project demonstrates a full machine learning lifecycle, from a high-accuracy baseline to a real-time application with microphone integration, implemented entirely in PyTorch within Google Colab notebooks.
 
-The model achieves **99.33% accuracy** on the clean test set while the robust model demonstrates strong performance on live microphone audio with **98% accuracy**.
+The model achieves **99.33% accuracy** on the clean test set while the microphone integrated model demonstrates strong performance with **98% accuracy** on the clean test set.
 
 ---
 
