@@ -54,10 +54,10 @@ The success of this project hinges on two key technical decisions: the choice of
 ## How to Use This Repository
 
 1.  **Open `1_baseline_Digit_recognition.ipynb`**
-    -   Run the single cell to train the high-accuracy baseline model. This notebook serves as a "sanity check" and can be used for performance comparisons.
+    -   Run the cells sequentially until you reach the training loop cell to train the high-accuracy baseline model and the evaluation cell to check the final result. This notebook serves as a "sanity check" and can be used for performance comparisons.
 
 2.  **Open `2_real_time_Digit_recognition.ipynb`**
-    -   Run the first large cell ("The Definitive Training Pipeline") to train the final, robust model. This will save its weights to `best_model.pth`.
+    -   Run the cells sequentially in order until you reach ("The Definitive Training Pipeline") to train the final, robust model. This will save its weights to `best_model.pth`.
     -   After training is complete, run the last cell ("The Definitive Real-Time Inference App") to launch the application with microphone integration and test the model with your own voice.
 
 ---
