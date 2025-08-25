@@ -11,13 +11,13 @@ The model achieves **99.33% accuracy** on the clean test set while the robust mo
 This project is organized into two separate notebooks, each building a distinct model with a specific purpose.
 
 ### 1. The Baseline Model
--   **Notebook:** `1_baseline_Digit_recognition.ipynb`
+-   **Notebook:** [`1_baseline_Digit_recognition.ipynb`](https://colab.research.google.com/drive/1JulNqWlnbPrhhWJyba6S1eT_VdcbDmnT?usp=sharing)
 -   **Purpose:** To establish a high-performance "sanity check" model and demonstrate the maximum achievable accuracy on the source data.
 -   **Method:** This notebook trains a custom CNN on the clean, upsampled *Free Spoken Digit Dataset*. No data augmentation is used.
 -   **Final Result:** The baseline model achieves a state-of-the-art **99.33% accuracy** on the clean test set, proving the validity of the data pipeline and model architecture in a perfect environment.
 
 ### 2. The Real-Time Model
--   **Notebook:** `2_real_time_Digit_recognition.ipynb`
+-   **Notebook:** [`2_real_time_Digit_recognition.ipynb`](https://colab.research.google.com/drive/17EJQJf-BP_g2p5oAxdBhmtc9OVtlOXYp?usp=sharing)
 -   **Purpose:** To build the final, robust model and deploy it in a live application with microphone integration.
 -   **Method:** This notebook retrains the custom CNN from scratch but enables a gentle and effective data augmentation strategy (`SpecAugment`). This prepares the model for the "air gap" problem—the domain shift between clean data and real-world microphone audio.
 -   **Final Result:** The real-time model achieves an excellent **98.00% accuracy** on the clean test set, demonstrating that it retains expert knowledge while gaining the robustness needed for live inference. This notebook contains the final application.
