@@ -72,4 +72,4 @@ The success of this project hinges on two key technical decisions: the choice of
     -   `matplotlib` and `seaborn` for plotting.
 -   **Tools:**
     -   `noisereduce` for real-time noise suppression.
--   **Environment:** Google Colab
+-   **Environment:** Google Colab - T4 GPU
