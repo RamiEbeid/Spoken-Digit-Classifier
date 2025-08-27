@@ -15,6 +15,7 @@ This project is organized into two separate notebooks, each building a distinct 
 -   **Purpose:** To establish a high-performance "sanity check" model and demonstrate the maximum achievable accuracy on the source data.
 -   **Method:** This notebook trains a custom CNN on the clean, upsampled *Free Spoken Digit Dataset*. No data augmentation is used.
 -   **Final Result:** The baseline model achieves a state-of-the-art **99.33% accuracy** on the clean test set, proving the validity of the data pipeline and model architecture in a perfect environment.
+-   **Inference Time:** 0.18 milliseconds 
 
 ### 2. The Real-Time Model
 -   **Notebook:** [`2_real_time_Digit_recognition.ipynb`](https://colab.research.google.com/drive/17EJQJf-BP_g2p5oAxdBhmtc9OVtlOXYp?usp=sharing)
